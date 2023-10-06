@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+        .container {
+            margin: auto;
+            width: 50%;
+        }
+        h1 {
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        label {
+            font-size: 2rem;
+        }
+        input {
+            width: 100%;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <form action="cad.php" method="post">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <label for="sobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="sobrenome">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
